@@ -1,0 +1,19 @@
+version: "3"
+services:
+  python:
+    restart: always
+    build: .
+    env_file:
+      - .env
+    container_name: "python3"
+    working_dir: "/root/"
+    tty: true
+    volumes:
+      - .:/root/opt
+  code:
+    image: codercom/code-server
+    restart: always
+    ports:
+      - "8443:8443"
+    volumes:
+      - .:/home/coder/project
