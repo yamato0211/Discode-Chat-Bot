@@ -1,9 +1,11 @@
 import os
 import discord
+from dotenv import load_dotenv
 from TalkAPI import Talk_API
 
 
-TOKEN = os.environ["DISCODE_KEY"]
+load_dotenv()
+TOKEN = os.environ.get("DISCODE_KEY")
 chat = False
 
 client = discord.Client()
