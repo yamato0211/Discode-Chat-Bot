@@ -8,7 +8,7 @@ load_dotenv()
 TOKEN = os.environ.get("DISCODE_KEY")
 chat = False
 
-client = discord.Client()
+client = discord.Client(intents=discord.Intents.all())
 
 @client.event
 async def on_ready():
