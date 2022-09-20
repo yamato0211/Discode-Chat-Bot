@@ -1,8 +1,7 @@
 import os
 import requests
-from dotenv import load_dotenv
 
-load_dotenv()
+
 DEFAULT_REQUEST_URL = "https://api.a3rt.recruit.co.jp/talk/v1/smalltalk"
 API_KEY = os.environ['API_KEY']
 

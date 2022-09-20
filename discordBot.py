@@ -1,10 +1,8 @@
 import os
 import discord
-from dotenv import load_dotenv
 from TalkAPI import Talk_API
 
 
-load_dotenv()
 TOKEN = os.environ["DISCODE_KEY"]
 chat = False
 
