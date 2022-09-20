@@ -1,1 +1,1 @@
-clock: python3 discordBot.py
+clock: python discordBot.py
